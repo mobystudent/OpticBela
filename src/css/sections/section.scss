@@ -13,11 +13,33 @@
 		padding: 120px 0;
 	}
 
+	&--choice {
+		background: $beige;
+	}
+
 	&__wrap {
 		display: flex;
 
 		&--content {
 			flex-flow: column;
+		}
+
+		&--choice {
+			position: relative;
+			width: 100%;
+			padding: 140px 0;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -50px;
+				left: -160px;
+				width: 940px;
+				height: 670px;
+				margin-left: -150px;
+				background: url("../img/glasses.png") no-repeat;
+				background-size: cover;
+			}
 		}
 	}
 
@@ -52,12 +74,16 @@
 				box-shadow: 0 0 0 10px $white;
 			}
 		}
+
+		&--choice {
+			margin-bottom: 65px;
+		}
 	}
 
 	&__title {
 		color: $darkGray;
 		letter-spacing: -.05em;
-		
+
 		&--main {
 			font: 45px $Lora;
 		}
@@ -65,11 +91,31 @@
 		&--section {
 			font: 35px $Lora;
 		}
+
+		&--choice {
+			font: 50px $Lora;
+		}
 	}
 
 	&__subtitle {
 		font: 30px $OpenSans;
 		letter-spacing: -.05em;
 		color: $grayOrange;
+
+		&--choice {
+			color: $darkGray;
+		}
+	}
+
+	&__block {
+		&--choice {
+			margin-left: 50%;
+			padding-left: 25px;
+		}
+	}
+
+	&__checkboxs {
+		display: flex;
+		flex-flow: column;
 	}
 }

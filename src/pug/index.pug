@@ -90,5 +90,22 @@ block content
 							p.content__text Bei Kontaktlinsen haben wir die Erfahrung von #[span.content__bold über 40 Jahren Praxis]. Vieles ist bei uns möglich, was andere nicht machen. Immer auf dem neuesten Stand der Entwicklung zu sein ist uns gerade bei Kontaktlinsen ein wichtiges Anliegen.
 							p.content__title Les Yeux – Pflegemittel für Kontaktlinsen.
 							p.content__text Preiswert und sicher in der Anwendung. Seit Jahrzehnten bewährt. Natürlich auch Benetzungstropfen - #[span.content__bold Les Yeux Fresh Hyaluron]. Empfohlen, auch wenn Sie keine Kontaktlinsen tragen bei müden, gereizten und trockenen Augen bei der Arbeit am Computer und bei trockener Raumluft.
+							
+			section.section.section--choice
+				.container
+					.section__wrap.section__wrap--choice
+						.section__block.section__block--choice
+							.section__header.section__header--choice
+								h2.section__title.section__title--choice Brillen von Johann von Goisern
+								span.section__subtitle.section__subtitle--choice Größte Auswahl in unserem Optikerfachgeschäft.
+							.section__checkboxs
+								
+								- const checkboxText = ['ein Produkt aus Österreich', 'eigene Design', 'einzigartiges Farbdesign'];
+								
+								each checkboxTextItem in checkboxText
+									
+									label.checkbox
+										input.checkbox__input(type="checkbox")
+										span.checkbox__text=checkboxTextItem
 			
 		include includes/footer.pug

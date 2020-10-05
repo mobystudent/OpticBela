@@ -1,0 +1,12 @@
+.checkbox {
+	padding-left: 35px;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font: 25px $Lato;
+		letter-spacing: -.05em;
+	}
+}
