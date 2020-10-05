@@ -55,9 +55,16 @@
 	}
 
 	&__title {
-		font: 45px $Lora;
 		color: $darkGray;
 		letter-spacing: -.05em;
+		
+		&--main {
+			font: 45px $Lora;
+		}
+
+		&--section {
+			font: 35px $Lora;
+		}
 	}
 
 	&__subtitle {
