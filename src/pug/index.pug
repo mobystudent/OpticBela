@@ -42,10 +42,40 @@ block content
 							span.section__subtitle bei Optik Ellinger in Wien
 						.content
 							p.content__text Optik Ellinger aus Wien ist ein #[span.content__semibold Meisterbetrieb in 2. Generation]. Gegründet 1965 bieten wir Ihnen viel Erfahrung und fachliches Wissen. Bei Optik Ellinger werden Brillen noch vom #[span.content__bold Optikermeister] persönlich angefertigt.
-							p.content__text.content__text--h3 Ihre Brille wird genau vermessen!
+							p.content__title Ihre Brille wird genau vermessen!
 							p.content__text Um mit einer Brille wirklich gut sehen zu können müssen die Gläser optimal zentriert in die #[span.content__highlight Brillenfassung] eingearbeitet werden. Für dieses optimale Ergebnis ist eine genaue Anpassung und Vermessung vor Ort erforderlich. Die Angabe der Pupillendistanz alleine, das ist der Abstand zwischen den Augen, genügt für #[span.content__bold moderne, technologisch aktuelle Brillengläser] keinesfalls.
 							p.content__text Nicht nur für #[span.content__bold Gleitsichtgläser], auch für moderne #[span.content__bold Einstärkengläser] werden zusätzliche Messergebnisse benötigt die bereits in den optischen Schliff Ihres Brillenglases integriert werden. Weitere Parameter werden dann für das Einarbeiten der Gläser in die Brillenfassung berücksichtigt.
 							p.content__text Bei Optik Ellinger in der Praterstraße wird der Sitz Ihrer Brille mit einem #[span.content__bold digitalen Zentriergerät] genau vermessen. Mit den ermittelten Daten wird Ihre Brille in perfekter Zusammenarbeit zwischen Glashersteller und Optikermeister genau auf Ihre #[span.content__bold persönlichen Bedürfnisse] abgestimmt.
 							p.content__text Als Ergebnis erhalten Sie eine Brille die Sie aus dem Internet so niemals bestellen können.
+							
+			section.section.section--types-glasses
+				.container
+					
+					-
+						glasses = [
+							{
+								icon: 'old-gl',
+								title: 'Brillengläser',
+								descrip: 'Ob Sie kurzsichtig oder weitsichtig, in unserem Optikerfachgeschäft erhalten Sie hochwertige Brillengläser für alle Ansprüche.'
+							},
+							{
+								icon: 'glasses',
+								title: 'Brillenfassungen',
+								descrip: 'Wir helfen Ihnen bei der Wahl die optimale Brillenfassung für Ihre Persönlichkeit und Ihren Typ zu finden.'
+							},
+							{
+								icon: 'lenses',
+								title: 'Kontaktlinsen',
+								descrip: 'Bei Optik Béla Ellinger mitten in Wien erwartet Sie ein großes Sortiment an Kontaktlinsen für jeden optimal angepasst.'
+							}
+						];
+					
+					each glassesItem in glasses
+						.glass-type
+							.glass-type__icon
+								svg.icon.icon--glass(class=`icon--glass-${glassesItem.icon}`)
+									use.icon__item(xlink:href=`#${glassesItem.icon}`)
+							h3.glass-type__title=glassesItem.title
+							p.glass-type__descrip=glassesItem.descrip
 			
 		include includes/footer.pug

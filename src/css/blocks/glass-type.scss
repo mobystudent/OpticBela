@@ -1,0 +1,43 @@
+.glass-type {
+	background: $lightDimGreen;
+	text-align: center;
+	width: 430px;
+	padding: 65px 30px;
+
+	&:not(:last-child) {
+		margin-right: 35px;
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 55px;
+		width: 90px;
+		margin: 0 auto 45px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			width: 90px;
+			height: 1px;
+			background: rgba($white, .8);
+		}
+	}
+
+	&__title {
+		font: 26px Lora;
+		letter-spacing: -.05em;
+		color: $white;
+		margin-bottom: 20px;
+	}
+
+	&__descrip {
+		font: 18px/27px $OpenSans;
+		letter-spacing: -.05em;
+		color: $white;
+	}
+}

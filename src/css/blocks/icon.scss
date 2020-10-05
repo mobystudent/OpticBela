@@ -1,3 +1,17 @@
 .icon {
-	
+	&--glass {
+		width: 74px;
+
+		&-old-gl {
+			height: 32px;
+		}
+
+		&-glasses {
+			height: 44px;
+		}
+
+		&-lenses {
+			height: 34px;
+		}
+	}
 }
