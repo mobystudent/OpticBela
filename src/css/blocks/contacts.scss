@@ -1,0 +1,46 @@
+.contacts {
+	display: flex;
+
+	&__block {
+		&:not(:last-child) {
+			margin-right: 65px;
+		}
+	}
+
+	&__item {
+		display: flex;
+
+		&--address {
+			flex-flow: column;
+		}
+
+		&--time {
+			justify-content: space-between;
+		}
+	}
+
+	&__title {
+		font: 16px/27px $OpenSans;
+		font-weight: 600;
+		color: $darkGray;
+	}
+
+	&__text {
+		font: 16px/27px $OpenSans;
+		font-weight: 400;
+		color: $darkGray;
+
+		&--link {
+			margin-right: 5px;
+		}
+
+		&--mail {
+			color: $dimGreen;
+			letter-spacing: .015em;
+		}
+
+		&--time {
+			margin-right: 15px;
+		}
+	}
+}

@@ -1,3 +1,13 @@
 .header {
+	&__top {
+		background: $lightDimGreen;
+	}
 
+	&__wrap {
+		display: flex;
+
+		&--bottom {
+			padding: 40px 0;
+		}
+	}
 }
