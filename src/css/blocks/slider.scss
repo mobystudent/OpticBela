@@ -1,0 +1,15 @@
+.slider {
+	width: 935px;
+	height: 100%;
+	margin-right: -215px;
+
+	&__content {
+		height: 100%;
+	}
+
+	&__slide {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+}

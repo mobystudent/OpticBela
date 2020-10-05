@@ -9,5 +9,29 @@ block content
 		include includes/header.pug
 		
 		main.main
+			section.section.section--represent
+				.container
+					.section__wrap
+						.represent
+							.represent__title-wrap
+								h1.represent__title--main 100% Qualität seit 1965
+								span.represent__title--subtitle – Ihr Optik-Fachgeschäft in Wien.
+							p.represent__descrip Erstklassige Qualität bei Brillenfassungen und Brillengläsern in Kombination aus Tradition und moderner Technik.
+							.represent__info
+								p.represent__text.represent__text--info Jetzt #[span.represent__text.represent__text--highlight kostenlosen Beratungstermin] vereinbaren:
+								.represent__phone
+									span.represent__span 01/214 12 80
+									
+						.slider
+							.slider__content
+								
+								//- - for (let i = 0; i < 3; i++)
+								- const i = 0;
+								
+								.slider__slide
+									pictire.img.img--slide
+										source.img__item(srcset=`img/slide-${i+1}.webp` type="image/webp")
+										source.img__item(srcset=`img/slide-${i+1}.jp2` type="image/jp2")
+										img.img__item(src=`img/slide-${i+1}.png` alt="slide")
 			
 		include includes/footer.pug

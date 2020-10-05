@@ -1,0 +1,60 @@
+.represent {
+	padding: 235px 20px 245px;
+
+	&__title-wrap {
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		&--main {
+			font: 50px $Lora;
+			font-weight: 400;
+			letter-spacing: -.05em;
+			color: $darkGray;
+		}
+
+		&--subtitle {
+			font: 35px $OpenSans;
+			font-weight: 400;
+			letter-spacing: -.05em;
+			color: $darkGray;
+		}
+	}
+
+	&__descrip {
+		font-weight: 400;
+		color: $darkGray;
+		font: 25px/35px $Lato;
+		max-width: 600px;
+		letter-spacing: -.05em;
+		margin-bottom: 35px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		background: $darkGray;
+		padding: 20px 40px;
+	}
+
+	&__text {
+		color: $white;
+		letter-spacing: -.05em;
+		font: 18px/35px $OpenSans;
+
+		&--info {
+			font-weight: 400;
+		}
+
+		&--highlight {
+			font-weight: 700;
+		}
+	}
+
+	&__phone {
+		font: 16px/30px $OpenSans;
+		color: $white;
+		font-weight: 400px;
+		margin-left: 35px;
+	}
+}

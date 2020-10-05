@@ -1,3 +1,10 @@
 .section {
-	
+	&--represent {
+		position: relative;
+		background: $beige;
+	}
+
+	&__wrap {
+		display: flex;
+	}
 }
