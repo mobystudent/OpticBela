@@ -2,14 +2,7 @@
 	column-count: 2;
 	column-gap: 40px;
 
-	h3 {
-		font: 30px $Lora;
-		color: $darkGray;
-		margin: 50px 0 15px;
-		letter-spacing: -.05em;
-	}
-
-	p {
+	&__text {
 		font: 18px/27px $OpenSans;
 		color: $darkGray;
 		letter-spacing: -.05em;
@@ -17,5 +10,25 @@
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
+
+		&--h3 {
+			font: 30px $Lora;
+			color: $darkGray;
+			margin: 50px 0 15px;
+			letter-spacing: -.05em;
+		}
+	}
+
+	&__semibold {
+		font-weight: 600;
+	}
+
+	&__bold {
+		font-weight: 700;
+	}
+
+	&__highlight {
+		color: $lightDimGreen;
+		font-weight: 700;
 	}
 }
