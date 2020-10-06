@@ -20,7 +20,9 @@ block content
 							.represent__info
 								p.represent__text.represent__text--info Jetzt #[span.represent__text.represent__text--highlight kostenlosen Beratungstermin] vereinbaren:
 								.represent__phone
-									span.represent__span 01/214 12 80
+									svg.icon.icon--phone-white
+										use.icon__item(xlink:href='#phoneWhite')
+									span.represent__num 01/214 12 80
 									
 						.slider
 							.slider__content
@@ -57,12 +59,12 @@ block content
 						];
 					
 					each glassesItem in glasses
-						.glass-type
-							.glass-type__icon
+						article.teaser
+							.teaser__icon
 								svg.icon.icon--glass(class=`icon--glass-${glassesItem.icon}`)
 									use.icon__item(xlink:href=`#${glassesItem.icon}`)
-							h3.glass-type__title=glassesItem.title
-							p.glass-type__descrip=glassesItem.descrip
+							h3.teaser__title=glassesItem.title
+							p.teaser__descrip=glassesItem.descrip
 							
 			section.section.section--subscribe
 				.container
@@ -101,7 +103,10 @@ block content
 								label.form__checkbox
 									input.form__item.form__item--checkbox(type="checkbox" name="user-agree")
 									p.form__text Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
-								button.form__btn(type="submit") Nachricht abschicken
+								button.form__btn(type="submit")
+									span.form__btn-text Nachricht abschicken
+									svg.icon.icon--arrow
+										use.icon__item(xlink:href='#dropdown')
 								
 			section.section.section--map
 				iframe.map(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7255.2474821098895!2d36.23754779724271!3d49.9904093631676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1601976864866!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")

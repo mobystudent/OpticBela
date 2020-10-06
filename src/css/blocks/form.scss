@@ -105,7 +105,7 @@
 			border: 1px solid $lightGray;
 			background: rgba($lightGray, .2);
 			transform: translateY(-50%);
-			transition: background 0.25s ease-in-out;
+			transition: background .25s ease-in-out;
 		}
 
 		&:after {
@@ -118,7 +118,7 @@
 			background: url("../img/check.svg") no-repeat;
 			background-size: cover;
 			opacity: 0;
-			transition: opacity 0.25s ease-in-out;
+			transition: opacity .25s ease-in-out;
 		}
 	}
 
@@ -131,9 +131,21 @@
 	}
 
 	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: $lightDimGreen;
 		padding: 23px 20px;
 		min-width: 255px;
+		transition: background .25s ease-in-out;
+
+		&:hover {
+			background: $darkGray;
+		}
+	}
+
+	&__btn-text {
+		margin-right: 10px;
 		color: $white;
 	}
 }

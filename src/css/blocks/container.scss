@@ -3,4 +3,8 @@
 	max-width: 1390px;
 	padding: 0 15px;
 	margin: 0 auto;
+
+	@media screen and (max-width: 1599px) {
+		width: 1300px;
+	}
 }

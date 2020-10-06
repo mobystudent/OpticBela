@@ -54,7 +54,13 @@
 	&__phone {
 		font: 16px/30px $OpenSans;
 		color: $white;
-		font-weight: 400px;
-		margin-left: 35px;
+		font-weight: 400;
+		margin-left: 15px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__num {
+		margin-left: 10px;
 	}
 }

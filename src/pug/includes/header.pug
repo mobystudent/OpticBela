@@ -10,15 +10,21 @@ header.header
 					- const headerMenu = ["Brillengläser", "Brillenfassungen", "Kontaktlinsen", "Aktionen", "Kontakt"];
 					- const headerSubmenu = ["Einstärkengläser", "Bildschirmbrillen", "Gleitsichtbrillen"];
 					
-					ul.nav__menu
+					ul.nav__menu.nav__menu--header
 						each headerMenuItem in headerMenu
-							li.nav__item.nav__item--header
-								a.nav__link.nav__link--header(href="#")=headerMenuItem
-								
-								if (headerMenuItem != "Aktionen" || headerMenuItem != "Kontakt")
+							if (headerMenuItem != "Aktionen" && headerMenuItem != "Kontakt")
+								li.nav__item.nav__item--drop.nav__item--header
+									a.nav__link.nav__link--drop.nav__link--header(href="#")
+										span.nav__text.nav__text--drop=headerMenuItem
+										svg.icon.icon--dropdown
+											use.icon__item(xlink:href="#dropdown")
 									ul.nav__submenu
-										li.nav__item
-											a.nav__link(href="#")=headerSubmenu
+										each headerSubmenuItem in headerSubmenu
+											li.nav__item.nav__item--sub
+												a.nav__link.nav__link--sub(href="#")=headerSubmenuItem
+							else
+								li.nav__item.nav__item--header
+									a.nav__link.nav__link--header(href="#")=headerMenuItem
 									
 				a.btn.btn--text-size(href="#")
 					small.btn__text.btn__text--small A

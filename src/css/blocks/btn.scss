@@ -5,10 +5,16 @@
 	&--home {
 		color: $white;
 		font: 18px/25px $OpenSans;
-		background: $darkGray;
 		padding: 15px 25px;
+		background: transparent;
 		display: flex;
 		align-items: center;
+		flex: 0 0 auto;
+		transition: background .25s ease-in-out;
+
+		&:hover {
+			background: $darkGray;
+		}
 	}
 
 	&--logo {
@@ -25,6 +31,7 @@
 		color: $white;
 		padding: 30px 5px;
 		margin-left: 65px;
+		flex: 0 0 auto;
 	}
 
 	&__text {

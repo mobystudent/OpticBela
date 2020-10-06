@@ -1,11 +1,16 @@
-.glass-type {
+.teaser {
 	background: $lightDimGreen;
 	text-align: center;
 	width: 430px;
 	padding: 65px 30px;
+	transition: background .25s ease-in-out;
 
 	&:not(:last-child) {
 		margin-right: 35px;
+	}
+
+	&:hover {
+		background: $darkGray;
 	}
 
 	&__icon {
