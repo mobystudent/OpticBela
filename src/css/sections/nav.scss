@@ -1,6 +1,6 @@
 .nav {
 	&--header {
-		padding: 25px 90px;
+		padding: 0 90px;
 		position: relative;
 		flex: 1 1 auto;
 
@@ -17,7 +17,7 @@
 	}
 
 	&--footer {
-		padding: 25px;
+		padding: 0 25px;
 	}
 
 	&__menu {
@@ -47,7 +47,6 @@
 		}
 
 		&--sub {
-			padding: 15px;
 			text-align: center;
 
 			&:not(:last-child) {
@@ -57,20 +56,34 @@
 	}
 
 	&__link {
+		display: block;
 		color: $white;
 		font-weight: 400;
+		transition: background .25s ease-in-out, box-shadow .25s ease-in-out, color .25s ease-in-out;
+
+		&:hover {
+			background: $darkGray;
+		}
 
 		&--header {
 			font: 18px/27px $OpenSans;
+			padding: 25px;
+
 		}
 
-		&--footer,
+		&--footer {
+			font: 16px/25px $OpenSans;
+			padding: 25px;
+		}
+
 		&--sub {
 			font: 16px/25px $OpenSans;
-		}
-
-		&--sub {
 			color: $darkGray;
+			padding: 15px;
+
+			&:hover {
+				color: $white;
+			}
 		}
 
 		&--drop {
@@ -82,8 +95,8 @@
 	&__submenu {
 		// display: none;
 		position: absolute;
-		top: 40px;
-		left: 15px;
+		top: 65px;
+		left: 40px;
 		width: 185px;
 		padding: 10px 0;
 		background: $white;
