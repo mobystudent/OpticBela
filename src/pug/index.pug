@@ -14,7 +14,7 @@ block content
 					.section__wrap
 						.represent
 							.represent__title-wrap
-								h2.represent__title--main 100% Qualität seit 1965
+								h1.represent__title--main 100% Qualität seit 1965
 								span.represent__title--subtitle – Ihr Optik-Fachgeschäft in Wien.
 							p.represent__descrip Erstklassige Qualität bei Brillenfassungen und Brillengläsern in Kombination aus Tradition und moderner Technik.
 							.represent__info
@@ -33,20 +33,6 @@ block content
 										source.img__item(srcset=`img/slide-${i+1}.webp` type="image/webp")
 										source.img__item(srcset=`img/slide-${i+1}.jp2` type="image/jp2")
 										img.img__item(src=`img/slide-${i+1}.png` alt="slide")
-											
-			section.section.section--content
-				.container
-					.section__wrap.section__wrap--content
-						.section__header.section__header--eye-line.section__header--content
-							h1.section__title.section__title--main Herzlich willkommen
-							h2.section__subtitle bei Optik Ellinger in Wien
-						.content
-							p.content__text Optik Ellinger aus Wien ist ein #[span.content__semibold Meisterbetrieb in 2. Generation]. Gegründet 1965 bieten wir Ihnen viel Erfahrung und fachliches Wissen. Bei Optik Ellinger werden Brillen noch vom #[span.content__bold Optikermeister] persönlich angefertigt.
-							p.content__title Ihre Brille wird genau vermessen!
-							p.content__text Um mit einer Brille wirklich gut sehen zu können müssen die Gläser optimal zentriert in die #[span.content__highlight Brillenfassung] eingearbeitet werden. Für dieses optimale Ergebnis ist eine genaue Anpassung und Vermessung vor Ort erforderlich. Die Angabe der Pupillendistanz alleine, das ist der Abstand zwischen den Augen, genügt für #[span.content__bold moderne, technologisch aktuelle Brillengläser] keinesfalls.
-							p.content__text Nicht nur für #[span.content__bold Gleitsichtgläser], auch für moderne #[span.content__bold Einstärkengläser] werden zusätzliche Messergebnisse benötigt die bereits in den optischen Schliff Ihres Brillenglases integriert werden. Weitere Parameter werden dann für das Einarbeiten der Gläser in die Brillenfassung berücksichtigt.
-							p.content__text Bei Optik Ellinger in der Praterstraße wird der Sitz Ihrer Brille mit einem #[span.content__bold digitalen Zentriergerät] genau vermessen. Mit den ermittelten Daten wird Ihre Brille in perfekter Zusammenarbeit zwischen Glashersteller und Optikermeister genau auf Ihre #[span.content__bold persönlichen Bedürfnisse] abgestimmt.
-							p.content__text Als Ergebnis erhalten Sie eine Brille die Sie aus dem Internet so niemals bestellen können.
 							
 			section.section.section--types-glasses
 				.container
@@ -78,37 +64,6 @@ block content
 							h3.glass-type__title=glassesItem.title
 							p.glass-type__descrip=glassesItem.descrip
 							
-			section.section.section--content
-				.container
-					.section__wrap.section__wrap--content
-						.section__header.section__header--eye-line.section__header--content
-							h2.section__title.section__title--section Wir helfen Ihnen bei der Bestimmung Ihrer Brillengläser
-						.content
-							p.content__text Sie benötigen eine neue Brille aber die alten Werte stimmen vermutlich nicht mehr? Oder ist es eventuell die erste Brille, die Sie benötigen? Kein Problem.
-							p.content__text Optik Ellinger, Ihr Meisterbetrieb für Brillen und Kontaktlinsen in Wien, bestimmt #[span.content__bold ohne lange Wartezeiten] schnell und professionell die benötigten Werte. Beim Kauf neuer #[span.content__highlight Brillengläser] ist diese Leistung völlig kostenlos.
-							p.content__text Auch rund um die Brille haben wir einiges zu bieten: #[span.content__bold Brillenetui, Putztücher, Brillenbänder und Ketten]. Große Auswahl an preiswerten, modischen Sonnenbrillen. Weiters finden Sie bei Optik Ellinger: #[span.content__bold Thermometer, Hygrometer, Lupen, Leuchtlupen mit LED-Beleuchtung] und einiges mehr.
-							p.content__text Bei Kontaktlinsen haben wir die Erfahrung von #[span.content__bold über 40 Jahren Praxis]. Vieles ist bei uns möglich, was andere nicht machen. Immer auf dem neuesten Stand der Entwicklung zu sein ist uns gerade bei Kontaktlinsen ein wichtiges Anliegen.
-							p.content__title Les Yeux – Pflegemittel für Kontaktlinsen.
-							p.content__text Preiswert und sicher in der Anwendung. Seit Jahrzehnten bewährt. Natürlich auch Benetzungstropfen - #[span.content__bold Les Yeux Fresh Hyaluron]. Empfohlen, auch wenn Sie keine Kontaktlinsen tragen bei müden, gereizten und trockenen Augen bei der Arbeit am Computer und bei trockener Raumluft.
-							
-			section.section.section--choice
-				.container
-					.section__wrap.section__wrap--choice
-						.section__block.section__block--choice
-							.section__header.section__header--choice
-								h2.section__title.section__title--choice Brillen von Johann von Goisern
-								span.section__subtitle.section__subtitle--choice Größte Auswahl in unserem Optikerfachgeschäft.
-							.section__checkboxs
-								
-								- const checkboxText = ['ein Produkt aus Österreich', 'eigene Design', 'einzigartiges Farbdesign'];
-								
-								each checkboxTextItem in checkboxText
-									
-									.checkbox
-										svg.icon.icon--check
-											use.icon__item(xlink:href='#check')
-										span.checkbox__text=checkboxTextItem
-										
 			section.section.section--subscribe
 				.container
 					.section__wrap.section__wrap--subscribe
