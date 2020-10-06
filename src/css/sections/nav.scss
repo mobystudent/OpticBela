@@ -38,6 +38,10 @@
 		@media screen and (max-width: 1023px) {
 			padding: 0;
 		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
 	}
 
 	&--burger {
@@ -49,6 +53,10 @@
 			align-items: center;
 			height: 100%;
 			padding: 80px 40px;
+		}
+
+		@media screen and (max-width: 767px) {
+			padding: 35px 25px;
 		}
 	}
 
@@ -63,6 +71,19 @@
 		&--burger {
 			flex-flow: column;
 			justify-content: center;
+		}
+
+		&--footer {
+			@media screen and (max-width: 1023px) {
+				padding-bottom: 30px;
+			}
+
+			@media screen and (max-width: 767px) {
+				padding-top: 10px;
+				padding-bottom: 50px;
+				flex-flow: column;
+				align-items: center;
+			}
 		}
 	}
 
@@ -81,6 +102,10 @@
 
 				@media screen and (max-width: 1023px) {
 					margin-right: 15px;
+				}
+
+				@media screen and (max-width: 767px) {
+					margin-right: 0;
 				}
 			}
 		}
@@ -119,6 +144,10 @@
 			@media screen and (max-width: 1365px) {
 				padding: 20px 15px;
 			}
+
+			@media screen and (max-width: 767px) {
+				padding: 10px;
+			}
 		}
 
 		&--sub {
@@ -133,6 +162,10 @@
 			@media screen and (max-width: 1023px) {
 				color: $white;
 				font-size: 18px;
+			}
+
+			@media screen and (max-width: 767px) {
+				font-size: 16px;
 			}
 
 			&:hover {
@@ -155,6 +188,12 @@
 			font: 24px/35px $OpenSans;
 			font-weight: 400;
 			padding: 15px;
+
+			@media screen and (max-width: 767px) {
+				font-size: 22px;
+				line-height: 32px;
+				padding: 10px;
+			}
 		}
 	}
 

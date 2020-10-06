@@ -58,14 +58,15 @@ block content
 							}
 						];
 					
-					each glassesItem in glasses
-						article.teaser
-							.teaser__icon
-								svg.icon.icon--glass(class=`icon--glass-${glassesItem.icon}`)
-									use.icon__item(xlink:href=`#${glassesItem.icon}`)
-							h3.teaser__title=glassesItem.title
-							p.teaser__descrip.text.text--content=glassesItem.descrip
-							//- a.teaser__btn
+					.wrap.wrap--teasers
+						each glassesItem in glasses
+							article.teaser
+								.teaser__icon
+									svg.icon.icon--glass(class=`icon--glass-${glassesItem.icon}`)
+										use.icon__item(xlink:href=`#${glassesItem.icon}`)
+								h3.teaser__title=glassesItem.title
+								p.teaser__descrip.text.text--content=glassesItem.descrip
+								//- a.teaser__btn
 							
 			section.section.section--subscribe
 				.container

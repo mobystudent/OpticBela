@@ -12,6 +12,10 @@
 			width: 80%;
 			margin: 0 auto;
 		}
+
+		@media screen and (max-width: 374px) {
+			width: 90%;
+		}
 	}
 
 	&__item {

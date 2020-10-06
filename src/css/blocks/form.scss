@@ -5,13 +5,29 @@
 	&__fields {
 		display: flex;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			margin-bottom: 35px;
+		}
 	}
 
 	&__part {
 		width: 50%;
 
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			max-width: 440px;
+			margin: 0 auto;
+		}
+
 		&--left {
 			margin-right: 30px;
+
+			@media screen and (max-width: 767px) {
+				margin-right: auto;
+				margin-bottom: 20px;
+			}
 		}
 
 		&--right {
@@ -31,6 +47,10 @@
 
 		&--mess {
 			flex: 1 0 auto;
+
+			@media screen and (max-width: 767px) {
+				height: 160px;
+			}
 		}
 
 		&:not(:last-child) {
@@ -77,6 +97,11 @@
 			@include placeholder(16px/25px $OpenSans, $darkGray);
 		}
 
+		@media screen and (max-width: 374px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
 		&--textarea {
 			resize: none;
 			height: 100%;
@@ -105,6 +130,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+		}
 	}
 
 	&__text {
@@ -113,17 +142,28 @@
 		color: $darkGray;
 		position: relative;
 
+		@media screen and (max-width: 767px) {
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 20px;
+			padding-left: 25px;
+		}
+
 		&:before {
 			content: "";
 			position: absolute;
-			top: 50%;
+			top: 4px;
 			left: 0;
 			width: 17px;
 			height: 17px;
 			border: 1px solid $lightGray;
 			background: rgba($lightGray, .2);
-			transform: translateY(-50%);
 			transition: background .25s ease-in-out;
+
+			@media screen and (max-width: 767px) {
+				width: 15px;
+				height: 15px;
+			}
 		}
 
 		&:after {
@@ -137,6 +177,11 @@
 			background-size: cover;
 			opacity: 0;
 			transition: opacity .25s ease-in-out;
+
+			@media screen and (max-width: 767px) {
+				width: 11px;
+				height: 10px;
+			}
 		}
 	}
 
@@ -165,6 +210,11 @@
 		@media screen and (max-width: 1023px) {
 			padding: 15px 10px;
 			min-width: 210px;
+		}
+
+		@media screen and (max-width: 767px) {
+			padding-top: 12px;
+			padding-bottom: 12px;
 		}
 
 		&:hover {

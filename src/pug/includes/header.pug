@@ -43,9 +43,9 @@ header.header
 						img.img__item(src="img/logo.png" alt="logo")
 							
 				include contacts
-				
-				- const contactBtns = ['Anschrift', 'Kontaktaufnahme', 'Öffnungszeiten'];
-				
-				.wrap.wrap--contact-btns
-					each contactBtnsItem in contactBtns
-						a.btn.btn--contact.text.text--content(href="#")=contactBtnsItem
+
+		- const contactBtns = ['Anschrift', 'Kontaktaufnahme', 'Öffnungszeiten'];
+		
+		.wrap.wrap--contacts
+			each contactBtnsItem in contactBtns
+				a.btn.btn--contact.text.text--content(href="#")=contactBtnsItem

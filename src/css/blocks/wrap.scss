@@ -1,9 +1,26 @@
 .wrap {
 	&--contacts {
 		display: none;
+		background: $lightDimGreen;
 
 		@media screen and (max-width: 1023px) {
 			display: flex;
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			align-items: center;
+			width: 100%;
+		}
+	}
+
+	&--teasers {
+		display: flex;
+		
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+			width: 100%;
 		}
 	}
 }
