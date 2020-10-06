@@ -1,8 +1,16 @@
 .represent {
 	padding: 235px 20px 245px;
 
+	@media screen and (max-width: 1599px) {
+		padding: 200px 20px;
+	}
+
 	&__title-wrap {
 		margin-bottom: 35px;
+
+		@media screen and (max-width: 1599px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__title {
@@ -11,6 +19,10 @@
 			font-weight: 400;
 			letter-spacing: -.05em;
 			color: $darkGray;
+
+			@media screen and (max-width: 1599px) {
+				font-size: 46px;
+			}
 		}
 
 		&--subtitle {
@@ -18,6 +30,10 @@
 			font-weight: 400;
 			letter-spacing: -.05em;
 			color: $darkGray;
+
+			@media screen and (max-width: 1599px) {
+				font-size: 30px;
+			}
 		}
 	}
 
@@ -28,13 +44,23 @@
 		max-width: 600px;
 		letter-spacing: -.05em;
 		margin-bottom: 35px;
+
+		@media screen and (max-width: 1599px) {
+			font-size: 22px;
+			line-height: 30px;
+			max-width: 560px;
+		}
 	}
 
 	&__info {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		background: $darkGray;
 		padding: 20px 40px;
+
+		@media screen and (max-width: 1599px) {
+			padding: 15px 25px;
+		}
 	}
 
 	&__text {

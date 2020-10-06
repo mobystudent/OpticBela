@@ -4,6 +4,10 @@
 		position: relative;
 		flex: 1 1 auto;
 
+		@media screen and (max-width: 1599px) {
+			padding: 0 50px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;

@@ -22,6 +22,11 @@
 		flex: 0 0 auto;
 		margin-left: -15px;
 		margin-right: 110px;
+
+		@media screen and (max-width: 1599px) {
+			width: 370px;
+			margin-right: 90px;
+		}
 	}
 
 	&--text-size {

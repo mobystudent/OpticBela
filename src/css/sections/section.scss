@@ -11,6 +11,10 @@
 
 	&--subscribe {
 		padding: 145px 0;
+
+		@media screen and (max-width: 1599px) {
+			padding: 115px 0;
+		}
 	}
 
 	&--map {

@@ -3,6 +3,12 @@
 	height: 100%;
 	margin-right: -215px;
 
+	@media screen and (max-width: 1599px) {
+		width: 50%;
+		flex: 1 0 auto;
+		margin-right: 0;
+	}
+
 	&__content {
 		height: 100%;
 	}

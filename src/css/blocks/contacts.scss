@@ -4,6 +4,10 @@
 	&__block {
 		&:not(:last-child) {
 			margin-right: 65px;
+
+			@media screen and (max-width: 1599px) {
+				margin-right: 50px;
+			}
 		}
 	}
 
