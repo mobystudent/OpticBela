@@ -2,16 +2,32 @@
 	&--glass {
 		width: 74px;
 
+		@media screen and (max-width: 1365px) {
+			width: 60px;
+		}
+
 		&-old-gl {
 			height: 32px;
+
+			@media screen and (max-width: 1365px) {
+				height: 28px;
+			}
 		}
 
 		&-glasses {
 			height: 44px;
+
+			@media screen and (max-width: 1365px) {
+				height: 36px;
+			}
 		}
 
 		&-lenses {
 			height: 34px;
+
+			@media screen and (max-width: 1365px) {
+				height: 28px;
+			}
 		}
 	}
 
@@ -23,21 +39,41 @@
 	&--user {
 		width: 22px;
 		height: 27px;
+
+		@media screen and (max-width: 1365px) {
+			width: 20px;
+			height: 25px;
+		}
 	}
 
 	&--phone {
 		width: 22px;
 		height: 24px;
+
+		@media screen and (max-width: 1365px) {
+			width: 20px;
+			height: 22px;
+		}
 	}
 
 	&--calendar {
 		width: 26px;
 		height: 31px;
+
+		@media screen and (max-width: 1365px) {
+			width: 24px;
+			height: 28px;
+		}
 	}
 
 	&--mess {
 		width: 28px;
 		height: 25px;
+
+		@media screen and (max-width: 1365px) {
+			width: 26px;
+			height: 23px;
+		}
 	}
 
 	&--dropdown {

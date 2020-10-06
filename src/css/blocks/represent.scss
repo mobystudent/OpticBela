@@ -2,7 +2,13 @@
 	padding: 235px 20px 245px;
 
 	@media screen and (max-width: 1599px) {
-		padding: 200px 20px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	@media screen and (max-width: 1365px) {
+		padding-top: 150px;
+		padding-bottom: 150px;
 	}
 
 	&__title-wrap {
@@ -10,6 +16,10 @@
 
 		@media screen and (max-width: 1599px) {
 			margin-bottom: 25px;
+		}
+
+		@media screen and (max-width: 1365px) {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -23,6 +33,10 @@
 			@media screen and (max-width: 1599px) {
 				font-size: 46px;
 			}
+
+			@media screen and (max-width: 1365px) {
+				font-size: 42px;
+			}
 		}
 
 		&--subtitle {
@@ -33,6 +47,10 @@
 
 			@media screen and (max-width: 1599px) {
 				font-size: 30px;
+			}
+
+			@media screen and (max-width: 1365px) {
+				font-size: 26px;
 			}
 		}
 	}
@@ -49,6 +67,14 @@
 			font-size: 22px;
 			line-height: 30px;
 			max-width: 560px;
+			margin-bottom: 30px;
+		}
+
+		@media screen and (max-width: 1365px) {
+			font-size: 20px;
+			line-height: 26px;
+			max-width: 420px;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -61,12 +87,21 @@
 		@media screen and (max-width: 1599px) {
 			padding: 15px 25px;
 		}
+
+		@media screen and (max-width: 1365px) {
+			padding: 10px 15px;
+		}
 	}
 
 	&__text {
 		color: $white;
 		letter-spacing: -.05em;
 		font: 18px/35px $OpenSans;
+
+		@media screen and (max-width: 1365px) {
+			font-size: 16px;
+			line-height: 28px;
+		}
 
 		&--info {
 			font-weight: 400;
@@ -84,6 +119,12 @@
 		margin-left: 15px;
 		display: flex;
 		align-items: center;
+		flex: 0 0 auto;
+
+		@media screen and (max-width: 1365px) {
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 
 	&__num {

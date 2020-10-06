@@ -7,6 +7,14 @@
 	&--types-glasses {
 		background: $beige;
 		padding: 120px 0;
+
+		@media screen and (max-width: 1599px) {
+			padding: 100px 0;
+		}
+
+		@media screen and (max-width: 1365px) {
+			padding: 80px 0;
+		}
 	}
 
 	&--subscribe {
@@ -15,11 +23,19 @@
 		@media screen and (max-width: 1599px) {
 			padding: 115px 0;
 		}
+
+		@media screen and (max-width: 1365px) {
+			padding: 100px 0;
+		}
 	}
 
 	&--map {
 		height: 555px;
 		width: 100%;
+
+		@media screen and (max-width: 1365px) {
+			height: 450px;
+		}
 	}
 
 	&__wrap {
@@ -65,6 +81,10 @@
 			width: 100%;
 			padding-bottom: 65px;
 			margin-bottom: 45px;
+
+			@media screen and (max-width: 1365px) {
+				padding-bottom: 40px;
+			}
 		}
 	}
 
@@ -72,12 +92,12 @@
 		color: $darkGray;
 		letter-spacing: -.05em;
 
-		&--main {
-			font: 45px $Lora;
-		}
-
 		&--section {
 			font: 35px $Lora;
+
+			@media screen and (max-width: 1365px) {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -85,5 +105,9 @@
 		font: 30px $OpenSans;
 		letter-spacing: -.05em;
 		color: $grayOrange;
+
+		@media screen and (max-width: 1365px) {
+			font-size: 24px;
+		}
 	}
 }

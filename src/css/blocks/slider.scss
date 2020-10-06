@@ -9,6 +9,10 @@
 		margin-right: 0;
 	}
 
+	@media screen and (max-width: 1365px) {
+		width: 52%;
+	}
+
 	&__content {
 		height: 100%;
 	}

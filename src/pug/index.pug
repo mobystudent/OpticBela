@@ -65,6 +65,7 @@ block content
 									use.icon__item(xlink:href=`#${glassesItem.icon}`)
 							h3.teaser__title=glassesItem.title
 							p.teaser__descrip=glassesItem.descrip
+							//- a.teaser__btn
 							
 			section.section.section--subscribe
 				.container
@@ -81,7 +82,7 @@ block content
 												use.icon__item(xlink:href='#user')
 										input.form__item(type="text" name="user-name" placeholder="Ihr Vor- und Nachname")
 									label.form__label(for="#user-email")
-										.form__icon.form__icon--mail @
+										small.form__icon.form__icon--mail @
 										input.form__item(type="email" name="user-email" placeholder="Ihre E-Mail Adresse")
 									label.form__label(for="#user-tel")
 										.form__icon

@@ -8,6 +8,10 @@
 			padding: 0 50px;
 		}
 
+		@media screen and (max-width: 1365px) {
+			padding: 0 35px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -34,15 +38,17 @@
 	}
 
 	&__item {
-		&--header {
-			&:not(:last-child) {
-				margin-right: 25px;
-			}
-		}
-
 		&--footer {
 			&:not(:last-child) {
 				margin-right: 65px;
+
+				@media screen and (max-width: 1599px) {
+					margin-right: 50px;
+				}
+
+				@media screen and (max-width: 1365px) {
+					margin-right: 30px;
+				}
 			}
 		}
 
@@ -69,21 +75,37 @@
 			background: $darkGray;
 		}
 
-		&--header {
-			font: 18px/27px $OpenSans;
+		&--header,
+		&--footer {
 			padding: 25px;
 
+			@media screen and (max-width: 1365px) {
+				padding: 20px 15px;
+			}
 		}
 
-		&--footer {
+		&--footer,
+		&--sub {
 			font: 16px/25px $OpenSans;
-			padding: 25px;
+		}
+
+		&--header {
+			font: 18px/27px $OpenSans;
+
+			@media screen and (max-width: 1365px) {
+				font-size: 16px;
+				line-height: 25px;
+			}
 		}
 
 		&--sub {
-			font: 16px/25px $OpenSans;
 			color: $darkGray;
 			padding: 15px;
+
+			@media screen and (max-width: 1365px) {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
 
 			&:hover {
 				color: $white;
@@ -106,6 +128,12 @@
 		background: $white;
 		box-shadow:  0 5px 10px 0 rgba($darkGray, .5);
 		z-index: 10;
+
+		@media screen and (max-width: 1365px) {
+			top: 55px;
+			left: 20px;
+			width: 170px;
+		}
 	}
 
 	&__text {
