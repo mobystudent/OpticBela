@@ -1,0 +1,139 @@
+.form {
+	display: flex;
+	flex-flow: column;
+
+	&__fields {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	&__part {
+		width: 50%;
+
+		&--left {
+			margin-right: 30px;
+		}
+
+		&--right {
+			display: flex;
+			flex-flow: column;
+		}
+	}
+
+	&__label {
+		display: flex;
+		height: 84px;
+		cursor: pointer;
+
+		&--mess {
+			flex: 1 0 auto;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__icon {
+		width: 84px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $beige;
+		flex: 0 0 auto;
+
+		&--mail {
+			font: 30px $OpenSans;
+			font-weight: 800;
+			color: $darkGray;
+		}
+	}
+
+	&__item {
+		border: 1px solid $beige;
+		padding: 15px 25px;
+		font: 18px/27px $OpenSans;
+		font-weight: 400;
+		@include placeholder(18px/27px $OpenSans, $darkGray);
+		width: 100%;
+
+		&--textarea {
+			resize: none;
+			height: 100%;
+			padding: 25px 30px;
+		}
+
+		&--checkbox {
+			position: absolute;
+			z-index: -1;
+			width: 0;
+			height: 0;
+			padding: 0;
+			opacity: 0;
+
+			&:checked + .form__text:before {
+				background: $lightDimGreen;
+			}
+
+			&:checked + .form__text:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font: 18px/27px $OpenSans;
+		font-weight: 400;
+		padding-left: 30px;
+		color: $darkGray;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 17px;
+			height: 17px;
+			border: 1px solid $lightGray;
+			background: rgba($lightGray, .2);
+			transform: translateY(-50%);
+			transition: background 0.25s ease-in-out;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 2px;
+			top: 6px;
+			width: 13px;
+			height: 12px;
+			background: url("../img/check.svg") no-repeat;
+			background-size: cover;
+			opacity: 0;
+			transition: opacity 0.25s ease-in-out;
+		}
+	}
+
+	&__highlight {
+		color: $lightDimGreen;
+	}
+
+	&__checkbox {
+		cursor: pointer;
+	}
+
+	&__btn {
+		background: $lightDimGreen;
+		padding: 23px 20px;
+		min-width: 255px;
+		color: $white;
+	}
+}

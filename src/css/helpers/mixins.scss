@@ -18,18 +18,21 @@
 		color: $color;
 		opacity: 1;
 		font: $font;
+		font-weight: 400;
 	}
 
 	&::-ms-placeholder {
 		color: $color;
 		opacity: 1;
 		font: $font;
+		font-weight: 400;
 	}
 
 	&:-ms-input-placeholder {
 		color: $color;
 		opacity: 1;
 		font: $font;
+		font-weight: 400;
 	}
 
 	&:focus:placeholder {

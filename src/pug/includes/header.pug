@@ -1,18 +1,18 @@
 header.header
 	.header__top
 		.container
-			.header__wrap.header__wrap--header
-				//- a.btn.btn--logo(href="#")
-				//- 	| Startseite
+			.header__wrap.header__wrap--top
+				a.btn.btn--home(href="#")
+					| Startseite
 				
-				nav.nav
+				nav.nav.nav--header
 					
 					- const headerMenu = ["Brillengläser", "Brillenfassungen", "Kontaktlinsen", "Aktionen", "Kontakt"];
 					- const headerSubmenu = ["Einstärkengläser", "Bildschirmbrillen", "Gleitsichtbrillen"];
 					
 					ul.nav__menu
 						each headerMenuItem in headerMenu
-							li.nav__item
+							li.nav__item.nav__item--header
 								a.nav__link(href="#")=headerMenuItem
 								
 								if (headerMenuItem != "Aktionen" || headerMenuItem != "Kontakt")
@@ -30,25 +30,4 @@ header.header
 						source.img__item(srcset='img/logo.jp2' type="image/jp2")
 						img.img__item(src="img/logo.png" alt="logo")
 							
-				.contacts
-					.contacts__block
-						h4.contacts__title Optik Béla Ellinger GmbH
-						p.contacts__item.contacts__item--address
-							span.contacts__text Praterstraße 30
-							span.contacts__text 1020 Wien
-					.contacts__block
-						h4.contacts__title Kontaktaufnahme
-						a.contacts__item.contacts__item--link(href="tel:+012141280")
-							span.contacts__text.contacts__text--link Telefon:
-							span.contacts__text 01/214 12 80
-						a.contacts__item.contacts__item--link(href="mailto:office@optiker-ellinger.at")
-							span.contacts__text.contacts__text--link E-Mail:
-							span.contacts__text.contacts__text--mail office@optiker-ellinger.at
-					.contacts__block
-						h4.contacts__title Öffnungszeiten
-						time.contacts__item.contacts__item--time(datetime="T9H")
-							span.contacts__text.contacts__text--time Montag - Freitag:
-							span.contacts__text 09:00 - 18:00 Uhr
-						time.contacts__item.contacts__item--time(datetime="T3H")
-							span.contacts__text.contacts__text--time Samstag:
-							span.contacts__text 09:00 - 12:00 Uhr 
+				include contacts

@@ -6,7 +6,7 @@ block title
 block content
 			
 	.wrapper
-		include includes/header.pug
+		include includes/header
 		
 		main.main
 			section.section.section--represent
@@ -37,7 +37,7 @@ block content
 			section.section.section--content
 				.container
 					.section__wrap.section__wrap--content
-						.section__header.section__header--content
+						.section__header.section__header--eye-line.section__header--content
 							h1.section__title.section__title--main Herzlich willkommen
 							h2.section__subtitle bei Optik Ellinger in Wien
 						.content
@@ -81,7 +81,7 @@ block content
 			section.section.section--content
 				.container
 					.section__wrap.section__wrap--content
-						.section__header.section__header--content
+						.section__header.section__header--eye-line.section__header--content
 							h2.section__title.section__title--section Wir helfen Ihnen bei der Bestimmung Ihrer Brillengläser
 						.content
 							p.content__text Sie benötigen eine neue Brille aber die alten Werte stimmen vermutlich nicht mehr? Oder ist es eventuell die erste Brille, die Sie benötigen? Kein Problem.
@@ -104,8 +104,51 @@ block content
 								
 								each checkboxTextItem in checkboxText
 									
-									label.checkbox
-										input.checkbox__input(type="checkbox")
+									.checkbox
+										svg.icon.icon--check
+											use.icon__item(xlink:href='#check')
 										span.checkbox__text=checkboxTextItem
+										
+			section.section.section--subscribe
+				.container
+					.section__wrap.section__wrap--subscribe
+						.section__header.section__header--eye-line.section__header--subscribe
+							h2.section__title.section__title--section Wir haben Ihr Interesse geweckt?
+							span.section__subtitle Jetzt einen Termin kostenlosen Sehtest vereinbaren!
+						form.form(action="#" method="get")
+							.form__fields
+								.form__part.form__part--left
+									label.form__label(for="#user-name")
+										.form__icon
+											svg.icon.icon--user
+												use.icon__item(xlink:href='#user')
+										input.form__item(type="text" name="user-name" placeholder="Ihr Vor- und Nachname")
+									label.form__label(for="#user-email")
+										.form__icon.form__icon--mail @
+										input.form__item(type="email" name="user-email" placeholder="Ihre E-Mail Adresse")
+									label.form__label(for="#user-tel")
+										.form__icon
+											svg.icon.icon--phone
+												use.icon__item(xlink:href='#phone')
+										input.form__item(type="tel" name="user-tel" placeholder="Ihre Telefonnummer")
+								.form__part.form__part--right
+									label.form__label(for="#user-date")
+										.form__icon
+											svg.icon.icon--calendar
+												use.icon__item(xlink:href='#calendar')
+										input.form__item(type="date" name="user-date" placeholder="Datum auswählen")
+									label.form__label.form__label--mess(for="#user-mess")
+										.form__icon
+											svg.icon.icon--mess
+												use.icon__item(xlink:href='#mess')
+										textarea.form__item.form__item--textarea( name="user-mess" placeholder="Ihre Nachricht an uns")
+							.form__footer
+								label.form__checkbox
+									input.form__item.form__item--checkbox(type="checkbox" name="user-agree")
+									p.form__text Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
+								button.form__btn(type="submit") Nachricht abschicken
+								
+			section.section.section--map
+				iframe.map(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7255.2474821098895!2d36.23754779724271!3d49.9904093631676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1601976864866!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
 			
-		include includes/footer.pug
+		include includes/footer

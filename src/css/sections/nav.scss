@@ -1,13 +1,27 @@
 .nav {
-	padding: 25px 88px;
-	
+	&--header {
+		padding: 25px 90px;
+	}
+
+	&--footer {
+		padding: 25px;
+	}
+
 	&__menu {
 		display: flex;
 	}
 
 	&__item {
-		&:not(:last-child) {
-			margin-right: 107px;
+		&--header {
+			&:not(:last-child) {
+				margin-right: 105px;
+			}
+		}
+
+		&--footer {
+			&:not(:last-child) {
+				margin-right: 65px;
+			}
 		}
 	}
 
