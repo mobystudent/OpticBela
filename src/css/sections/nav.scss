@@ -1,6 +1,18 @@
 .nav {
 	&--header {
 		padding: 25px 90px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			height: 30px;
+			width: 1px;
+			transform: translateY(-50%);
+			background: rgba($white, .8);
+		}
 	}
 
 	&--footer {
@@ -27,8 +39,15 @@
 
 	&__link {
 		color: $white;
-		font: 16px/25px $OpenSans;
 		font-weight: 400;
+
+		&--header {
+			font: 18px/27px $OpenSans;
+		}
+
+		&--footer {
+			font: 16px/25px $OpenSans;
+		}
 	}
 
 	&__submenu {

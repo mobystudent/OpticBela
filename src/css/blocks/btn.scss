@@ -2,17 +2,49 @@
 	cursor: pointer;
 	display: inline-block;
 
-	// &--logo {
-	// 	color: $white;
-	// 	font: 18px/25px $OpenSans;
-	// 	background: $darkGray;
-	// 	padding: 15px 20px;
-	// }
+	&--home {
+		color: $white;
+		font: 18px/25px $OpenSans;
+		background: $darkGray;
+		padding: 15px 25px;
+		display: flex;
+		align-items: center;
+	}
 
 	&--logo {
 		width: 410px;
 		flex: 0 0 auto;
 		margin-left: -15px;
 		margin-right: 110px;
+	}
+
+	&--text-size {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		color: $white;
+		padding: 15px 5px;
+		margin-left: 65px;
+	}
+
+	&__text {
+		font-family: $OpenSans;
+		font-weight: 400;
+
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+
+		&--small {
+			font-size: 14px;
+		}
+
+		&--mid {
+			font-size: 16px;
+		}
+
+		&--large {
+			font-size: 18px;
+		}
 	}
 }
