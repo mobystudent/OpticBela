@@ -43,6 +43,9 @@
       <symbol id="phoneWhite" viewBox="0 0 22 24">
         <image width="22" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYBAMAAAAMkBB4AAAAAXNSR0IB2cksfwAAADBQTFRF////////////////////////////////////////////////////////////////Tq+4QAAAABB0Uk5TABw3o//eAQQoEgpIv1txiTIXRYYAAACRSURBVHicY2BgVGSAAxPXBBiTycVFAcZmdXEJg7FFXFycYGwVFxe4BhC7AMpucXGJhKkpcXFdAGMzu3jDrWJy8YGz2V1cGuCcKy7H4OwSJA3cSIrYTFw8gJQWmLMUJMHrCnYto4uLX0KLi/MEqDNiXaDO5XABA3+wDlEwG+IN9i8gtjvEXA4gxxVmC9cd1+sMABOtIdHyt5EPAAAAAElFTkSuQmCC"></image>
       </symbol>
+      <symbol id="close" viewBox="0 0 32 32" fill="none">
+        <path d="M1 1l30 30m0-30L1 31"></path>
+      </symbol>
     </svg>
     <div class="wrapper">
       <header class="header">
@@ -95,20 +98,20 @@
                   <source class="img__item" srcset="img/logo.webp" type="image/webp">
                   <source class="img__item" srcset="img/logo.jp2" type="image/jp2"><img class="img__item" src="img/logo.png" alt="logo">
                 </picture></a>
-              <div class="contacts">
-                <div class="contacts__block" data-name="Anschrift">
-                  <h4 class="contacts__title text text--small-cont">Optik Béla Ellinger GmbH</h4>
-                  <p class="contacts__item contacts__item--address"><span class="contacts__text text text text--small-cont">Praterstraße 30</span><span class="contacts__text text text--small-cont">1020 Wien</span></p>
-                </div>
-                <div class="contacts__block" data-name="Kontaktaufnahme">
-                  <h4 class="contacts__title text text--small-cont">Kontaktaufnahme</h4><a class="contacts__item contacts__item--link" href="tel:+012141280"><span class="contacts__text contacts__text--link text text--small-cont">Telefon:</span><span class="contacts__text text text--small-cont">01/214 12 80</span></a><a class="contacts__item contacts__item--link" href="mailto:office@optiker-ellinger.at"><span class="contacts__text contacts__text--link text text--small-cont">E-Mail:</span><span class="contacts__text contacts__text--mail text text--small-cont">office@optiker-ellinger.at</span></a>
-                </div>
-                <div class="contacts__block" data-name="Öffnungszeiten">
-                  <h4 class="contacts__title text text--small-cont">Öffnungszeiten</h4>
-                  <time class="contacts__item contacts__item--time" datetime="T9H"><span class="contacts__text contacts__text--time text text--small-cont">Montag - Freitag:</span><span class="contacts__text text text--small-cont">09:00 - 18:00 Uhr</span></time>
-                  <time class="contacts__item contacts__item--time" datetime="T3H"><span class="contacts__text contacts__text--time text text--small-cont">Samstag:</span><span class="contacts__text text text--small-cont">09:00 - 12:00 Uhr</span></time>
-                </div>
-              </div>
+                  <div class="contacts contacts--header">
+                    <div class="contacts__block contacts__block--header" data-name="Anschrift">
+                      <h4 class="contacts__title text text--small-cont">Optik Béla Ellinger GmbH</h4>
+                      <p class="contacts__item contacts__item--address"><span class="contacts__text text text text--small-cont">Praterstraße 30</span><span class="contacts__text text text--small-cont">1020 Wien</span></p>
+                    </div>
+                    <div class="contacts__block contacts__block--header" data-name="Kontaktaufnahme">
+                      <h4 class="contacts__title text text--small-cont">Kontaktaufnahme</h4><a class="contacts__item contacts__item--link" href="tel:+012141280"><span class="contacts__text contacts__text--link text text--small-cont">Telefon:</span><span class="contacts__text text text--small-cont">01/214 12 80</span></a><a class="contacts__item contacts__item--link" href="mailto:office@optiker-ellinger.at"><span class="contacts__text contacts__text--link text text--small-cont">E-Mail:</span><span class="contacts__text contacts__text--mail text text--small-cont">office@optiker-ellinger.at</span></a>
+                    </div>
+                    <div class="contacts__block contacts__block--header" data-name="Öffnungszeiten">
+                      <h4 class="contacts__title text text--small-cont">Öffnungszeiten</h4>
+                      <time class="contacts__item contacts__item--time" datetime="T9H"><span class="contacts__text contacts__text--time text text--small-cont">Montag - Freitag:</span><span class="contacts__text text text--small-cont">09:00 - 18:00 Uhr</span></time>
+                      <time class="contacts__item contacts__item--time" datetime="T3H"><span class="contacts__text contacts__text--time text text--small-cont">Samstag:</span><span class="contacts__text text text--small-cont">09:00 - 12:00 Uhr</span></time>
+                    </div>
+                  </div>
             </div>
           </div>
           <div class="wrap wrap--contacts"><a class="btn btn--contact text text--content" href="#">Anschrift</a><a class="btn btn--contact text text--content" href="#">Kontaktaufnahme</a><a class="btn btn--contact text text--content" href="#">Öffnungszeiten</a>
@@ -156,7 +159,7 @@
                   </svg>
                 </div>
                 <h3 class="teaser__title">Brillengläser</h3>
-                <p class="teaser__descrip text text--content">Ob Sie kurzsichtig oder weitsichtig, in unserem Optikerfachgeschäft erhalten Sie hochwertige Brillengläser für alle Ansprüche.</p>
+                <p class="teaser__descrip text text--content">Ob Sie kurzsichtig oder weitsichtig, in unserem Optikerfachgeschäft erhalten Sie hochwertige Brillengläser für alle Ansprüche.</p><a class="teaser__btn" href="old-gl"></a>
               </article>
               <article class="teaser">
                 <div class="teaser__icon">
@@ -165,7 +168,7 @@
                   </svg>
                 </div>
                 <h3 class="teaser__title">Brillenfassungen</h3>
-                <p class="teaser__descrip text text--content">Wir helfen Ihnen bei der Wahl die optimale Brillenfassung für Ihre Persönlichkeit und Ihren Typ zu finden.</p>
+                <p class="teaser__descrip text text--content">Wir helfen Ihnen bei der Wahl die optimale Brillenfassung für Ihre Persönlichkeit und Ihren Typ zu finden.</p><a class="teaser__btn" href="glasses"></a>
               </article>
               <article class="teaser">
                 <div class="teaser__icon">
@@ -174,7 +177,7 @@
                   </svg>
                 </div>
                 <h3 class="teaser__title">Kontaktlinsen</h3>
-                <p class="teaser__descrip text text--content">Bei Optik Béla Ellinger mitten in Wien erwartet Sie ein großes Sortiment an Kontaktlinsen für jeden optimal angepasst.</p>
+                <p class="teaser__descrip text text--content">Bei Optik Béla Ellinger mitten in Wien erwartet Sie ein großes Sortiment an Kontaktlinsen für jeden optimal angepasst.</p><a class="teaser__btn" href="lenses"></a>
               </article>
             </div>
           </div>
@@ -194,10 +197,10 @@
                           <use class="icon__item" xlink:href="#user"></use>
                         </svg>
                       </div>
-                      <input class="form__item text text--content" type="text" name="user-name" placeholder="Ihr Vor- und Nachname">
+                      <input class="form__item text text--content" type="text" name="user-name" placeholder="Ihr Vor- und Nachname" required>
                     </label>
                     <label class="form__label" for="#user-email"><small class="form__icon form__icon--mail">@</small>
-                      <input class="form__item text text--content" type="email" name="user-email" placeholder="Ihre E-Mail Adresse">
+                      <input class="form__item text text--content" type="email" name="user-email" placeholder="Ihre E-Mail Adresse" required>
                     </label>
                     <label class="form__label" for="#user-tel">
                       <div class="form__icon">
@@ -205,7 +208,7 @@
                           <use class="icon__item" xlink:href="#phone"></use>
                         </svg>
                       </div>
-                      <input class="form__item text text--content" type="tel" name="user-tel" placeholder="Ihre Telefonnummer">
+                      <input class="form__item text text--content" type="tel" name="user-tel" placeholder="Ihre Telefonnummer" required>
                     </label>
                   </div>
                   <div class="form__part form__part--right">
@@ -215,7 +218,7 @@
                           <use class="icon__item" xlink:href="#calendar"></use>
                         </svg>
                       </div>
-                      <input class="form__item text text--content" type="date" name="user-date" placeholder="Datum auswählen">
+                      <input class="form__item text text--content" type="date" name="user-date" placeholder="Datum auswählen" required>
                     </label>
                     <label class="form__label form__label--mess" for="#user-mess">
                       <div class="form__icon">
@@ -254,20 +257,20 @@
                   <source class="img__item" srcset="img/logo.webp" type="image/webp">
                   <source class="img__item" srcset="img/logo.jp2" type="image/jp2"><img class="img__item" src="img/logo.png" alt="logo">
                 </picture></a>
-              <div class="contacts">
-                <div class="contacts__block" data-name="Anschrift">
-                  <h4 class="contacts__title text text--small-cont">Optik Béla Ellinger GmbH</h4>
-                  <p class="contacts__item contacts__item--address"><span class="contacts__text text text text--small-cont">Praterstraße 30</span><span class="contacts__text text text--small-cont">1020 Wien</span></p>
-                </div>
-                <div class="contacts__block" data-name="Kontaktaufnahme">
-                  <h4 class="contacts__title text text--small-cont">Kontaktaufnahme</h4><a class="contacts__item contacts__item--link" href="tel:+012141280"><span class="contacts__text contacts__text--link text text--small-cont">Telefon:</span><span class="contacts__text text text--small-cont">01/214 12 80</span></a><a class="contacts__item contacts__item--link" href="mailto:office@optiker-ellinger.at"><span class="contacts__text contacts__text--link text text--small-cont">E-Mail:</span><span class="contacts__text contacts__text--mail text text--small-cont">office@optiker-ellinger.at</span></a>
-                </div>
-                <div class="contacts__block" data-name="Öffnungszeiten">
-                  <h4 class="contacts__title text text--small-cont">Öffnungszeiten</h4>
-                  <time class="contacts__item contacts__item--time" datetime="T9H"><span class="contacts__text contacts__text--time text text--small-cont">Montag - Freitag:</span><span class="contacts__text text text--small-cont">09:00 - 18:00 Uhr</span></time>
-                  <time class="contacts__item contacts__item--time" datetime="T3H"><span class="contacts__text contacts__text--time text text--small-cont">Samstag:</span><span class="contacts__text text text--small-cont">09:00 - 12:00 Uhr</span></time>
-                </div>
-              </div>
+                  <div class="contacts contacts--footer">
+                    <div class="contacts__block contacts__block--footer" data-name="Anschrift">
+                      <h4 class="contacts__title text text--small-cont">Optik Béla Ellinger GmbH</h4>
+                      <p class="contacts__item contacts__item--address"><span class="contacts__text text text text--small-cont">Praterstraße 30</span><span class="contacts__text text text--small-cont">1020 Wien</span></p>
+                    </div>
+                    <div class="contacts__block contacts__block--footer" data-name="Kontaktaufnahme">
+                      <h4 class="contacts__title text text--small-cont">Kontaktaufnahme</h4><a class="contacts__item contacts__item--link" href="tel:+012141280"><span class="contacts__text contacts__text--link text text--small-cont">Telefon:</span><span class="contacts__text text text--small-cont">01/214 12 80</span></a><a class="contacts__item contacts__item--link" href="mailto:office@optiker-ellinger.at"><span class="contacts__text contacts__text--link text text--small-cont">E-Mail:</span><span class="contacts__text contacts__text--mail text text--small-cont">office@optiker-ellinger.at</span></a>
+                    </div>
+                    <div class="contacts__block contacts__block--footer" data-name="Öffnungszeiten">
+                      <h4 class="contacts__title text text--small-cont">Öffnungszeiten</h4>
+                      <time class="contacts__item contacts__item--time" datetime="T9H"><span class="contacts__text contacts__text--time text text--small-cont">Montag - Freitag:</span><span class="contacts__text text text--small-cont">09:00 - 18:00 Uhr</span></time>
+                      <time class="contacts__item contacts__item--time" datetime="T3H"><span class="contacts__text contacts__text--time text text--small-cont">Samstag:</span><span class="contacts__text text text--small-cont">09:00 - 12:00 Uhr</span></time>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
@@ -319,7 +322,10 @@
             <li class="nav__item nav__item--burger"><a class="nav__link nav__link--burger" href="#">Aktionen</a></li>
             <li class="nav__item nav__item--burger"><a class="nav__link nav__link--burger" href="#">Kontakt</a></li>
           </ul>
-        </nav><a class="btn btn--close" href="#"></a>
+        </nav><a class="btn btn--close" href="#">
+          <svg class="icon icon--close">
+            <use class="icon__item" xlink:href="#close"></use>
+          </svg></a>
       </div>
     </div>
   </body>

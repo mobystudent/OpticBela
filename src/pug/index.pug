@@ -66,7 +66,7 @@ block content
 										use.icon__item(xlink:href=`#${glassesItem.icon}`)
 								h3.teaser__title=glassesItem.title
 								p.teaser__descrip.text.text--content=glassesItem.descrip
-								//- a.teaser__btn
+								a.teaser__btn(href=glassesItem.icon)
 							
 			section.section.section--subscribe
 				.container
@@ -81,21 +81,21 @@ block content
 										.form__icon
 											svg.icon.icon--user
 												use.icon__item(xlink:href='#user')
-										input.form__item.text.text--content(type="text" name="user-name" placeholder="Ihr Vor- und Nachname")
+										input.form__item.text.text--content(type="text" name="user-name" placeholder="Ihr Vor- und Nachname" required)
 									label.form__label(for="#user-email")
 										small.form__icon.form__icon--mail @
-										input.form__item.text.text--content(type="email" name="user-email" placeholder="Ihre E-Mail Adresse")
+										input.form__item.text.text--content(type="email" name="user-email" placeholder="Ihre E-Mail Adresse" required)
 									label.form__label(for="#user-tel")
 										.form__icon
 											svg.icon.icon--phone
 												use.icon__item(xlink:href='#phone')
-										input.form__item.text.text--content(type="tel" name="user-tel" placeholder="Ihre Telefonnummer")
+										input.form__item.text.text--content(type="tel" name="user-tel" placeholder="Ihre Telefonnummer" required)
 								.form__part.form__part--right
 									label.form__label(for="#user-date")
 										.form__icon
 											svg.icon.icon--calendar
 												use.icon__item(xlink:href='#calendar')
-										input.form__item.text.text--content(type="date" name="user-date" placeholder="Datum auswählen")
+										input.form__item.text.text--content(type="date" name="user-date" placeholder="Datum auswählen" required)
 									label.form__label.form__label--mess(for="#user-mess")
 										.form__icon
 											svg.icon.icon--mess
