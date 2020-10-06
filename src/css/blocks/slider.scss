@@ -13,6 +13,12 @@
 		width: 52%;
 	}
 
+	@media screen and (max-width: 1023px) {
+		height: 440px;
+		width: 100%;
+		order: 1;
+	}
+
 	&__content {
 		height: 100%;
 	}

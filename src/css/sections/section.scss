@@ -27,6 +27,10 @@
 		@media screen and (max-width: 1365px) {
 			padding: 100px 0;
 		}
+
+		@media screen and (max-width: 1023px) {
+			padding: 80px 0;
+		}
 	}
 
 	&--map {
@@ -36,10 +40,20 @@
 		@media screen and (max-width: 1365px) {
 			height: 450px;
 		}
+
+		@media screen and (max-width: 1023px) {
+			height: 400px;
+		}
 	}
 
 	&__wrap {
 		display: flex;
+
+		&--represent {
+			@media screen and (max-width: 1023px) {
+				flex-flow: column;
+			}
+		}
 
 		&--subscribe {
 			flex-flow: column;

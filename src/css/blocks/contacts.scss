@@ -1,12 +1,27 @@
 .contacts {
 	display: flex;
 
+	@media screen and (max-width: 1365px) {
+		justify-content: space-around;
+		width: 100%;
+	}
+
 	&__block {
+		display: block;
+		
+		@media screen and (max-width: 1023px) {
+			display: none;
+		}
+
 		&:not(:last-child) {
 			margin-right: 65px;
 
 			@media screen and (max-width: 1599px) {
 				margin-right: 50px;
+			}
+
+			@media screen and (max-width: 1365px) {
+				margin-right: 30px;
 			}
 		}
 	}

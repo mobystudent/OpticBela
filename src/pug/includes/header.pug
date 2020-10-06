@@ -18,13 +18,16 @@ header.header
 										span.nav__text.nav__text--drop.text.text--content=headerMenuItem
 										svg.icon.icon--dropdown
 											use.icon__item(xlink:href="#dropdown")
-									ul.nav__submenu
+									ul.nav__submenu.nav__submenu--header
 										each headerSubmenuItem in headerSubmenu
 											li.nav__item.nav__item--sub
-												a.nav__link.nav__link--sub.text--small-cont(href="#")=headerSubmenuItem
+												a.nav__link.nav__link--sub.text.text--small-cont(href="#")=headerSubmenuItem
 							else
 								li.nav__item.nav__item--header
 									a.nav__link.nav__link--header.text.text--content(href="#")=headerMenuItem
+									
+				a.btn.btn--burger.text.text--content(href="#")
+					| Menü
 									
 				a.btn.btn--text-size(href="#")
 					small.btn__text.btn__text--small A
@@ -40,3 +43,9 @@ header.header
 						img.img__item(src="img/logo.png" alt="logo")
 							
 				include contacts
+				
+				- const contactBtns = ['Anschrift', 'Kontaktaufnahme', 'Öffnungszeiten'];
+				
+				.wrap.wrap--contact-btns
+					each contactBtnsItem in contactBtns
+						a.btn.btn--contact.text.text--content(href="#")=contactBtnsItem

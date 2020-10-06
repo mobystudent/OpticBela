@@ -1,0 +1,23 @@
+.burger
+	nav.nav.nav--burger
+		
+		- const burgerMenu = ["Brillengläser", "Brillenfassungen", "Kontaktlinsen", "Aktionen", "Kontakt"];
+		- const BurgerSubmenu = ["Einstärkengläser", "Bildschirmbrillen", "Gleitsichtbrillen"];
+		
+		ul.nav__menu.nav__menu--burger
+			each burgerMenuItem in burgerMenu
+				if (burgerMenuItem != "Aktionen" && burgerMenuItem != "Kontakt")
+					li.nav__item.nav__item--drop.nav__item--burger
+						a.nav__link.nav__link--drop.nav__link--burger(href="#")
+							span.nav__text.nav__text--drop=burgerMenuItem
+							svg.icon.icon--dropdown
+								use.icon__item(xlink:href="#dropdown")
+						ul.nav__submenu.nav__submenu--burger
+							each BurgerSubmenuItem in BurgerSubmenu
+								li.nav__item.nav__item--sub
+									a.nav__link.nav__link--sub.text.text--small-cont(href="#")=BurgerSubmenuItem
+				else
+					li.nav__item.nav__item--burger
+						a.nav__link.nav__link--burger(href="#")=burgerMenuItem
+
+	a.btn.btn--close(href="#")
