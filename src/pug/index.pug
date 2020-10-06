@@ -22,7 +22,7 @@ block content
 								.represent__phone
 									svg.icon.icon--phone-white
 										use.icon__item(xlink:href='#phoneWhite')
-									span.represent__num 01/214 12 80
+									span.represent__num.text--small-cont 01/214 12 80
 									
 						.slider
 							.slider__content
@@ -64,7 +64,7 @@ block content
 								svg.icon.icon--glass(class=`icon--glass-${glassesItem.icon}`)
 									use.icon__item(xlink:href=`#${glassesItem.icon}`)
 							h3.teaser__title=glassesItem.title
-							p.teaser__descrip=glassesItem.descrip
+							p.teaser__descrip.text.text--content=glassesItem.descrip
 							//- a.teaser__btn
 							
 			section.section.section--subscribe
@@ -80,32 +80,32 @@ block content
 										.form__icon
 											svg.icon.icon--user
 												use.icon__item(xlink:href='#user')
-										input.form__item(type="text" name="user-name" placeholder="Ihr Vor- und Nachname")
+										input.form__item.text.text--content(type="text" name="user-name" placeholder="Ihr Vor- und Nachname")
 									label.form__label(for="#user-email")
 										small.form__icon.form__icon--mail @
-										input.form__item(type="email" name="user-email" placeholder="Ihre E-Mail Adresse")
+										input.form__item.text.text--content(type="email" name="user-email" placeholder="Ihre E-Mail Adresse")
 									label.form__label(for="#user-tel")
 										.form__icon
 											svg.icon.icon--phone
 												use.icon__item(xlink:href='#phone')
-										input.form__item(type="tel" name="user-tel" placeholder="Ihre Telefonnummer")
+										input.form__item.text.text--content(type="tel" name="user-tel" placeholder="Ihre Telefonnummer")
 								.form__part.form__part--right
 									label.form__label(for="#user-date")
 										.form__icon
 											svg.icon.icon--calendar
 												use.icon__item(xlink:href='#calendar')
-										input.form__item(type="date" name="user-date" placeholder="Datum auswählen")
+										input.form__item.text.text--content(type="date" name="user-date" placeholder="Datum auswählen")
 									label.form__label.form__label--mess(for="#user-mess")
 										.form__icon
 											svg.icon.icon--mess
 												use.icon__item(xlink:href='#mess')
-										textarea.form__item.form__item--textarea( name="user-mess" placeholder="Ihre Nachricht an uns")
+										textarea.form__item.form__item--textarea.text.text--content( name="user-mess" placeholder="Ihre Nachricht an uns")
 							.form__footer
 								label.form__checkbox
 									input.form__item.form__item--checkbox(type="checkbox" name="user-agree")
-									p.form__text Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
+									p.form__text.text.text--content Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
 								button.form__btn(type="submit")
-									span.form__btn-text Nachricht abschicken
+									span.form__btn-text.text.text--content Nachricht abschicken
 									svg.icon.icon--arrow
 										use.icon__item(xlink:href='#dropdown')
 								

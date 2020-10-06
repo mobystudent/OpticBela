@@ -69,14 +69,8 @@
 	}
 
 	&__descrip {
-		font: 18px/27px $OpenSans;
 		letter-spacing: -.05em;
 		color: $white;
-
-		@media screen and (max-width: 1365px) {
-			font-size: 16px;
-			line-height: 25px;
-		}
 	}
 
 	&__btn {

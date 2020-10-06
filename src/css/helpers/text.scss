@@ -1,3 +1,14 @@
 .text {
+	&--content {
+		font: 18px/27px $OpenSans;
 
+		@media screen and (max-width: 1365px) {
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+
+	&--small-cont {
+		font: 16px/27px $OpenSans;
+	}
 }

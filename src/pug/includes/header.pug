@@ -2,7 +2,7 @@ header.header
 	.header__top
 		.container
 			.header__wrap.header__wrap--top
-				a.btn.btn--home(href="#")
+				a.btn.btn--home.text.text--content(href="#")
 					| Startseite
 				
 				nav.nav.nav--header
@@ -15,16 +15,16 @@ header.header
 							if (headerMenuItem != "Aktionen" && headerMenuItem != "Kontakt")
 								li.nav__item.nav__item--drop.nav__item--header
 									a.nav__link.nav__link--drop.nav__link--header(href="#")
-										span.nav__text.nav__text--drop=headerMenuItem
+										span.nav__text.nav__text--drop.text.text--content=headerMenuItem
 										svg.icon.icon--dropdown
 											use.icon__item(xlink:href="#dropdown")
 									ul.nav__submenu
 										each headerSubmenuItem in headerSubmenu
 											li.nav__item.nav__item--sub
-												a.nav__link.nav__link--sub(href="#")=headerSubmenuItem
+												a.nav__link.nav__link--sub.text--small-cont(href="#")=headerSubmenuItem
 							else
 								li.nav__item.nav__item--header
-									a.nav__link.nav__link--header(href="#")=headerMenuItem
+									a.nav__link.nav__link--header.text.text--content(href="#")=headerMenuItem
 									
 				a.btn.btn--text-size(href="#")
 					small.btn__text.btn__text--small A

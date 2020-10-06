@@ -69,14 +69,11 @@
 	&__item {
 		border: 1px solid $beige;
 		padding: 15px 25px;
-		font: 18px/27px $OpenSans;
 		font-weight: 400;
 		@include placeholder(18px/27px $OpenSans, $darkGray);
 		width: 100%;
 
 		@media screen and (max-width: 1365px) {
-			font-size: 16px;
-			line-height: 25px;
 			@include placeholder(16px/25px $OpenSans, $darkGray);
 		}
 
@@ -111,16 +108,10 @@
 	}
 
 	&__text {
-		font: 18px/27px $OpenSans;
 		font-weight: 400;
 		padding-left: 30px;
 		color: $darkGray;
 		position: relative;
-
-		@media screen and (max-width: 1365px) {
-			font-size: 16px;
-			line-height: 25px;
-		}
 
 		&:before {
 			content: "";
@@ -177,13 +168,7 @@
 	}
 
 	&__btn-text {
-		font: 18px/27px $OpenSans;
 		margin-right: 10px;
 		color: $white;
-
-		@media screen and (max-width: 1365px) {
-			font-size: 16px;
-			line-height: 25px;
-		}
 	}
 }

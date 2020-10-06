@@ -113,18 +113,12 @@
 	}
 
 	&__phone {
-		font: 16px/30px $OpenSans;
 		color: $white;
 		font-weight: 400;
 		margin-left: 15px;
 		display: flex;
 		align-items: center;
 		flex: 0 0 auto;
-
-		@media screen and (max-width: 1365px) {
-			font-size: 14px;
-			line-height: 22px;
-		}
 	}
 
 	&__num {

@@ -84,20 +84,6 @@
 			}
 		}
 
-		&--footer,
-		&--sub {
-			font: 16px/25px $OpenSans;
-		}
-
-		&--header {
-			font: 18px/27px $OpenSans;
-
-			@media screen and (max-width: 1365px) {
-				font-size: 16px;
-				line-height: 25px;
-			}
-		}
-
 		&--sub {
 			color: $darkGray;
 			padding: 15px;
