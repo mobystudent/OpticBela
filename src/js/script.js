@@ -5,7 +5,7 @@ $(window).on('load', () => {
 	showSubMenu();
 	showBurgerMenu();
 	slider();
-	showContactsHeader();
+	windowResize();
 });
 
 function showSubMenu() {
@@ -42,21 +42,39 @@ function slider() {
 	});
 }
 
-function showContactsHeader() {
-	$(".btn--contact").click(function(e) {
-		e.preventDefault();
+function __showContactsHeader() {
+	if(window.innerWidth < 1024) {
+		$(".contacts__block--header").hide();
 
-		const nameBlock = $(this).data("name");
+		$(".btn--contact").click(function(e) {
+			e.preventDefault();
 
-		$(".contacts__block--header").map((i, item) => {
-			if($(item).data('block') == nameBlock) {
-				if($(item).css('display') == 'none') {
-					$(".contacts__block--header").hide();
-					$(item).show();
-			 	} else {
-					$(item).hide();
+			const nameBlock = $(this).data("name");
+
+			$(".contacts__block--header").map((i, item) => {
+				if($(item).data('block') == nameBlock) {
+					if($(item).css('display') == 'none') {
+						new Promise((resolve) => {
+							$(".contacts__block--header").slideUp(200);
+							setTimeout(() => resolve(), 200);
+						}).then(() => {
+							$(item).slideDown();
+						});
+				 	} else {
+						$(item).slideUp();
+					}
 				}
-			}
+			});
 		});
-	});
+	} else {
+		$(".contacts__block--header").show();
+	}
+}
+
+function windowResize() {
+	__showContactsHeader();
+
+	$(window).resize(() => {
+		__showContactsHeader();
+	})
 }
