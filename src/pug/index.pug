@@ -14,15 +14,20 @@ block content
 					.section__wrap.section__wrap--represent
 						.represent
 							.represent__title-wrap
-								h1.represent__title--main 100% Qualität seit 1965
-								span.represent__title--subtitle – Ihr Optik-Fachgeschäft in Wien.
-							p.represent__descrip Erstklassige Qualität bei Brillenfassungen und Brillengläsern in Kombination aus Tradition und moderner Technik.
+								h1.represent__title--main
+									| 100% Qualität seit 1965
+								span.represent__title--subtitle
+									| – Ihr Optik-Fachgeschäft in Wien.
+							p.represent__descrip
+								| Erstklassige Qualität bei Brillenfassungen und Brillengläsern in Kombination aus Tradition und moderner Technik.
 							.represent__info
-								p.represent__text.represent__text--info Jetzt #[span.represent__text.represent__text--highlight kostenlosen Beratungstermin] vereinbaren:
+								p.represent__text.represent__text--info
+									| Jetzt #[span.represent__text.represent__text--highlight kostenlosen Beratungstermin] vereinbaren:
 								.represent__phone
 									svg.icon.icon--phone-white
 										use.icon__item(xlink:href='#phoneWhite')
-									span.represent__num.text.text--small-cont 01/214 12 80
+									span.represent__num.text.text--small-cont
+										| 01/214 12 80
 									
 						.slider
 							.slider__content#mainSlider
@@ -30,10 +35,7 @@ block content
 								- for (let i = 0; i < 3; i++)
 								
 									.slider__slide
-										pictire.img.img--slide
-											source.img__item(srcset=`img/slide-${i+1}.webp` type="image/webp")
-											source.img__item(srcset=`img/slide-${i+1}.jp2` type="image/jp2")
-											img.img__item(src=`img/slide-${i+1}.png` alt="slide")
+										+pictire('slide', `slide-${i+1}`)
 							
 			section.section.section--types-glasses
 				.container
@@ -71,8 +73,10 @@ block content
 				.container
 					.section__wrap.section__wrap--subscribe
 						.section__header.section__header--eye-line.section__header--subscribe
-							h2.section__title.section__title--section Wir haben Ihr Interesse geweckt?
-							span.section__subtitle Jetzt einen Termin kostenlosen Sehtest vereinbaren!
+							h2.section__title.section__title--section
+								| Wir haben Ihr Interesse geweckt?
+							span.section__subtitle
+								| Jetzt einen Termin kostenlosen Sehtest vereinbaren!
 						form.form(action="#" method="get")
 							.form__fields
 								.form__part.form__part--left
@@ -103,9 +107,11 @@ block content
 							.form__footer
 								label.form__checkbox
 									input.form__item.form__item--checkbox(type="checkbox" name="user-agree")
-									p.form__text.text.text--content Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
+									p.form__text.text.text--content
+										| Die #[span.form__highlight Datenschutzerklärung] habe ich gelesen und akzeptiert
 								button.form__btn(type="submit")
-									span.form__btn-text.text.text--content Nachricht abschicken
+									span.form__btn-text.text.text--content
+										| Nachricht abschicken
 									svg.icon.icon--arrow
 										use.icon__item(xlink:href='#dropdown')
 								
