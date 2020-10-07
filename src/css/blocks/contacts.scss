@@ -6,12 +6,6 @@
 		width: 100%;
 	}
 
-	&--header {
-		@media screen and (max-width: 1023px) {
-			display: none;
-		}
-	}
-
 	&--footer {
 		@media screen and (max-width: 1023px) {
 			flex-flow: column;
@@ -42,6 +36,10 @@
 		}
 
 		&--header {
+			@media screen and (max-width: 1023px) {
+				display: none;
+			}
+			
 			&:not(:last-child) {
 				@media screen and (max-width: 1023px) {
 					margin-right: 0;

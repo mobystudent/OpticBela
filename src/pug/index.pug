@@ -25,16 +25,15 @@ block content
 									span.represent__num.text.text--small-cont 01/214 12 80
 									
 						.slider
-							.slider__content
+							.slider__content#mainSlider
 								
-								//- - for (let i = 0; i < 3; i++)
-								- const i = 0;
+								- for (let i = 0; i < 3; i++)
 								
-								.slider__slide
-									pictire.img.img--slide
-										source.img__item(srcset=`img/slide-${i+1}.webp` type="image/webp")
-										source.img__item(srcset=`img/slide-${i+1}.jp2` type="image/jp2")
-										img.img__item(src=`img/slide-${i+1}.png` alt="slide")
+									.slider__slide
+										pictire.img.img--slide
+											source.img__item(srcset=`img/slide-${i+1}.webp` type="image/webp")
+											source.img__item(srcset=`img/slide-${i+1}.jp2` type="image/jp2")
+											img.img__item(src=`img/slide-${i+1}.png` alt="slide")
 							
 			section.section.section--types-glasses
 				.container

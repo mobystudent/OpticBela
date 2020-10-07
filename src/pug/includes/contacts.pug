@@ -1,11 +1,11 @@
 mixin contacts(blockName)
 	.contacts(class=`contacts--${blockName}`)
-		.contacts__block(class=`contacts__block--${blockName}` data-name="Anschrift")
+		.contacts__block(class=`contacts__block--${blockName}` data-block="Anschrift")
 			h4.contacts__title.text.text--small-cont Optik Béla Ellinger GmbH
 			p.contacts__item.contacts__item--address
 				span.contacts__text.text.text.text--small-cont Praterstraße 30
 				span.contacts__text.text.text--small-cont 1020 Wien
-		.contacts__block(class=`contacts__block--${blockName}` data-name="Kontaktaufnahme")
+		.contacts__block(class=`contacts__block--${blockName}` data-block="Kontaktaufnahme")
 			h4.contacts__title.text.text--small-cont Kontaktaufnahme
 			a.contacts__item.contacts__item--link(href="tel:+012141280")
 				span.contacts__text.contacts__text--link.text.text--small-cont Telefon:
@@ -13,7 +13,7 @@ mixin contacts(blockName)
 			a.contacts__item.contacts__item--link(href="mailto:office@optiker-ellinger.at")
 				span.contacts__text.contacts__text--link.text.text--small-cont E-Mail:
 				span.contacts__text.contacts__text--mail.text.text--small-cont office@optiker-ellinger.at
-		.contacts__block(class=`contacts__block--${blockName}` data-name="Öffnungszeiten")
+		.contacts__block(class=`contacts__block--${blockName}` data-block="Öffnungszeiten")
 			h4.contacts__title.text.text--small-cont Öffnungszeiten
 			time.contacts__item.contacts__item--time(datetime="T9H")
 				span.contacts__text.contacts__text--time.text.text--small-cont Montag - Freitag:

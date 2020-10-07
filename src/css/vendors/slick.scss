@@ -1,0 +1,27 @@
+.slick {
+	&-track {
+		display: flex;
+	}
+
+	&-arrow {
+		font-size: 0;
+	}
+}
+
+.slider {
+	.slick-list {
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.slick-track,
+	.slick-slide > div {
+		height: 100%;
+	}
+
+	.slick-dots,
+	.slick-arrow {
+		display: none;
+	}
+}

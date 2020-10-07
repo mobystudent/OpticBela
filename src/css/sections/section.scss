@@ -60,6 +60,7 @@
 
 	&__wrap {
 		display: flex;
+		width: 100%;
 
 		&--represent {
 			@media screen and (max-width: 1023px) {
