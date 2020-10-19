@@ -17,9 +17,10 @@
 
 	&--teasers {
 		display: flex;
-		
+		flex-flow: wrap;
+
 		@media screen and (max-width: 767px) {
-			flex-flow: column;
+			flex-flow: column wrap;
 			width: 100%;
 		}
 	}
