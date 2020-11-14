@@ -1,14 +1,12 @@
 include ../mixins/contacts
+include ../mixins/picture
 
 footer.footer
 	.footer__top
 		.container
 			.footer__wrap.footer__wrap--top
 				a.btn.btn--logo(href="/")
-					picture.img.img--logo
-						source.img__item(srcset='img/logo.webp' type="image/webp")
-						source.img__item(srcset='img/logo.jp2' type="image/jp2")
-						img.img__item(src="img/logo.png" alt="logo")
+					+picture('logo', 'logo')
 							
 				+contacts('footer')
 	.footer__bottom

@@ -2,15 +2,21 @@
 	position: relative;
 	background: $lightDimGreen;
 	text-align: center;
-	width: 32%;
+	width: 430px;
 	padding: 65px 30px;
 	transition: background .25s ease-in-out;
 
+	@media screen and (max-width: 1599px) {
+		width: 400px;
+	}
+
 	@media screen and (max-width: 1365px) {
+		width: 314px;
 		padding: 50px 25px;
 	}
 
 	@media screen and (max-width: 1023px) {
+		width: 229px;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
